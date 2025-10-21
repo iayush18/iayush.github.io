@@ -9,7 +9,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="py-12 px-4 bg-background/50 border-t border-border/50">
+    <footer className="py-12 px-4 bg-card border-t-2 border-border">
       <div className="container mx-auto max-w-6xl">
         <div className="flex flex-col items-center space-y-6">
           <div className="flex gap-4">
@@ -18,7 +18,7 @@ const Footer = () => {
                 key={social.label}
                 variant="outline"
                 size="icon"
-                className="border-primary/30 hover:bg-primary/10 hover:border-primary/50 transition-all hover:scale-110"
+                className="border-2 border-primary/30 hover:bg-primary hover:text-white hover:border-primary transition-all hover:scale-110 shadow-card hover:shadow-glow"
                 asChild
               >
                 <a href={social.href} aria-label={social.label} target="_blank" rel="noopener noreferrer">

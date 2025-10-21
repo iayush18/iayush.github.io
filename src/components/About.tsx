@@ -8,8 +8,8 @@ const About = () => {
           About Me
         </h2>
         
-        <Card className="p-8 bg-gradient-card border-border/50 backdrop-blur-sm animate-fade-in">
-          <div className="space-y-4 text-foreground/90 leading-relaxed">
+        <Card className="p-8 bg-card border-2 border-border shadow-card hover:shadow-float transition-all animate-fade-in">
+          <div className="space-y-4 text-foreground leading-relaxed">
             <p className="text-lg">
               👋 Hi, I'm <span className="text-primary font-semibold">Ayush Kumar</span>, a passionate and curious tech enthusiast currently pursuing my B.Tech from MDU Rohtak.
             </p>

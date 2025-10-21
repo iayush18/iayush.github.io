@@ -34,13 +34,13 @@ const Education = () => {
           {education.map((edu, index) => (
             <Card 
               key={edu.degree}
-              className="p-6 bg-gradient-card border-border/50 backdrop-blur-sm hover:border-primary/50 transition-all animate-fade-in"
+              className="p-6 bg-card border-2 border-border shadow-card hover:shadow-float hover:border-primary/50 transition-all hover:scale-[1.02] animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex gap-4">
                 <div className="flex-shrink-0">
-                  <div className="p-3 rounded-full bg-primary/10">
-                    <GraduationCap className="w-6 h-6 text-primary" />
+                  <div className="p-3 rounded-full bg-gradient-primary">
+                    <GraduationCap className="w-6 h-6 text-white" />
                   </div>
                 </div>
                 <div className="flex-1">

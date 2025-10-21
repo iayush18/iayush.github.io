@@ -32,7 +32,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <Card 
               key={project.title}
-              className="p-6 bg-gradient-card border-border/50 backdrop-blur-sm hover:border-primary/50 transition-all hover:scale-105 animate-fade-in flex flex-col"
+              className="p-6 bg-card border-2 border-border shadow-card hover:shadow-float hover:border-primary/50 transition-all hover:scale-105 hover:-translate-y-2 animate-fade-in flex flex-col"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex-1">
@@ -43,7 +43,7 @@ const Projects = () => {
                   {project.tags.map((tag) => (
                     <span 
                       key={tag}
-                      className="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary border border-primary/20"
+                      className="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/30"
                     >
                       {tag}
                     </span>
@@ -52,11 +52,11 @@ const Projects = () => {
               </div>
               
               <div className="flex gap-2 mt-4">
-                <Button variant="outline" size="sm" className="flex-1 border-primary/30 hover:bg-primary/10">
+                <Button variant="outline" size="sm" className="flex-1 border-2 border-primary/30 hover:bg-primary hover:text-white transition-all">
                   <Github className="w-4 h-4 mr-2" />
                   Code
                 </Button>
-                <Button variant="outline" size="sm" className="flex-1 border-primary/30 hover:bg-primary/10">
+                <Button variant="outline" size="sm" className="flex-1 border-2 border-primary/30 hover:bg-primary hover:text-white transition-all">
                   <ExternalLink className="w-4 h-4 mr-2" />
                   Demo
                 </Button>

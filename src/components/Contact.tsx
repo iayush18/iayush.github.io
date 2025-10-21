@@ -55,10 +55,10 @@ const Contact = () => {
           Get In Touch
         </h2>
         
-        <Card className="p-8 bg-gradient-card border-border/50 backdrop-blur-sm animate-fade-in">
+        <Card className="p-8 bg-card border-2 border-border shadow-float animate-fade-in">
           <div className="flex items-center justify-center mb-6">
-            <div className="p-4 rounded-full bg-primary/10">
-              <Mail className="w-8 h-8 text-primary" />
+            <div className="p-4 rounded-full bg-gradient-primary shadow-glow">
+              <Mail className="w-8 h-8 text-white" />
             </div>
           </div>
           
@@ -73,7 +73,7 @@ const Contact = () => {
                 placeholder="Your name"
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                className="bg-background/50 border-border/50"
+                className="bg-background border-2 border-border focus:border-primary transition-colors"
               />
             </div>
             
@@ -87,7 +87,7 @@ const Contact = () => {
                 placeholder="your.email@example.com"
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                className="bg-background/50 border-border/50"
+                className="bg-background border-2 border-border focus:border-primary transition-colors"
               />
             </div>
             
@@ -101,13 +101,13 @@ const Contact = () => {
                 rows={5}
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                className="bg-background/50 border-border/50 resize-none"
+                className="bg-background border-2 border-border focus:border-primary transition-colors resize-none"
               />
             </div>
             
             <Button 
               type="submit" 
-              className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold"
+              className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold shadow-glow hover:shadow-float transition-all hover:scale-[1.02]"
             >
               Send Message
             </Button>
