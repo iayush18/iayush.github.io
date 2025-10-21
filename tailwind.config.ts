@@ -105,11 +105,13 @@ export default {
         "gradient-hero": "var(--gradient-hero)",
         "gradient-card": "var(--gradient-card)",
         "gradient-mesh": "var(--gradient-mesh)",
+        "gradient-badge": "var(--gradient-badge)",
       },
       boxShadow: {
         "glow": "var(--shadow-glow)",
         "card": "var(--shadow-card)",
         "float": "var(--shadow-float)",
+        "soft": "var(--shadow-soft)",
       },
     },
   },

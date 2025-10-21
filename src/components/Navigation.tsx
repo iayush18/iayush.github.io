@@ -20,27 +20,27 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md border-b-2 border-border shadow-card">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-card/80 backdrop-blur-xl border-b border-border/50 shadow-soft">
+      <div className="container mx-auto px-4 lg:px-8">
+        <div className="flex items-center justify-between h-20">
           <a 
             href="#" 
-            className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent"
+            className="text-2xl font-bold text-foreground hover:text-primary transition-colors"
             onClick={(e) => {
               e.preventDefault();
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
           >
-            AK
+            Ayush<span className="text-primary">.</span>
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-1">
+          <div className="hidden md:flex items-center space-x-2">
             {navItems.map((item) => (
               <Button
                 key={item.label}
                 variant="ghost"
-                className="hover:text-primary"
+                className="text-foreground hover:text-primary hover:bg-primary/5 font-medium transition-all"
                 onClick={() => scrollToSection(item.href)}
               >
                 {item.label}
