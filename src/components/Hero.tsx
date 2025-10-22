@@ -19,16 +19,16 @@ const Hero = () => {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-16">
             {/* Text Content */}
-            <div className="flex-1 text-center lg:text-left space-y-8 max-w-2xl">
+            <div className="flex-1 text-center lg:text-left space-y-8 max-w-2xl pt-8 md:pt-12">
               {/* Status Badge */}
-              <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-badge rounded-full border border-primary/30 backdrop-blur-sm">
+              {/* <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-badge rounded-full border border-primary/30 backdrop-blur-sm">
                 <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
                 <span className="text-sm font-medium text-foreground">Available for Internships</span>
-              </div>
+              </div> */}
               
               {/* Main Heading */}
               <div className="space-y-4">
-                <p className="text-muted-foreground text-lg">Hello There! 👋</p>
+                <p className="text-muted-foreground text-lg md:mt-8 pt-8 mt-8">Hello There! 👋</p>
                 <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-foreground leading-tight">
                   I'm <span className="bg-gradient-primary bg-clip-text text-transparent">Ayush Kumar</span>
                 </h1>
