@@ -3,9 +3,9 @@ import { Button } from "@/components/ui/button";
 
 const Footer = () => {
   const socialLinks = [
-    { icon: Github, label: "GitHub", href: "#" },
-    { icon: Linkedin, label: "LinkedIn", href: "#" },
-    { icon: Instagram, label: "Instagram", href: "#" },
+    { icon: Github, label: "GitHub", href: "https://github.com/iayush18", target: "_blank" },
+    { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/in/ayush9718", target: "_blank" },
+    { icon: Instagram, label: "Instagram", href: "https://www.instagram.com/ayush.singh_124/", target: "_blank" },
   ];
 
   return (

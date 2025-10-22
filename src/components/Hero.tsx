@@ -67,10 +67,10 @@ const Hero = () => {
               
               {/* Social Links */}
               <div className="flex gap-3 justify-center lg:justify-start pt-6">
-                <a href="#" className="w-12 h-12 rounded-full bg-card hover:bg-primary/10 border-2 border-border hover:border-primary transition-all hover:scale-110 flex items-center justify-center shadow-soft">
+                <a href="https://github.com/iayush18" target="_blank" className="w-12 h-12 rounded-full bg-card hover:bg-primary/10 border-2 border-border hover:border-primary transition-all hover:scale-110 flex items-center justify-center shadow-soft">
                   <Github className="w-5 h-5 text-foreground" />
                 </a>
-                <a href="#" className="w-12 h-12 rounded-full bg-card hover:bg-primary/10 border-2 border-border hover:border-primary transition-all hover:scale-110 flex items-center justify-center shadow-soft">
+                <a href="https://linkedin.com/in/ayush9718" target="_blank" className="w-12 h-12 rounded-full bg-card hover:bg-primary/10 border-2 border-border hover:border-primary transition-all hover:scale-110 flex items-center justify-center shadow-soft">
                   <Linkedin className="w-5 h-5 text-foreground" />
                 </a>
               </div>
@@ -90,15 +90,11 @@ const Hero = () => {
                   
                   {/* Photo placeholder */}
                   <div className="w-full h-full rounded-full overflow-hidden bg-gradient-card backdrop-blur-sm">
-                    <div className="w-full h-full flex items-center justify-center bg-gradient-primary">
-                      <div className="text-center p-8">
-                        <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-card/40 backdrop-blur-sm flex items-center justify-center border-2 border-white/30">
-                          <span className="text-6xl font-bold text-white">AK</span>
-                        </div>
-                        <p className="text-white text-base font-medium">Upload Your Photo</p>
-                        <p className="text-white/70 text-sm mt-2">Click to add image</p>
-                      </div>
-                    </div>
+                    <img
+                      src="/Ayush.png"
+                      alt="Ayush Kumar"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
 
