@@ -106,8 +106,8 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Scroll indicator */}
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer" onClick={scrollToAbout}>
+        {/* Scroll indicator — hidden on screens < lg (<=1023px) */}
+        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer hidden lg:flex" onClick={scrollToAbout}>
           <div className="flex flex-col items-center gap-2">
             <span className="text-sm text-muted-foreground">Scroll Down</span>
             <ArrowDown className="w-5 h-5 text-primary" />
